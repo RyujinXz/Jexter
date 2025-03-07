@@ -382,6 +382,18 @@ section,
     transform: scale(1.05);
 }
 
+.centralizar {
+  justify-content: center;
+  /* text-align: center; */
+  /* align-content: center; */
+}
+
+@media (min-width: 960px ) {
+  .card {
+    width: 18rem;
+  }
+}
+
  /*--------------------------------------------------------------
   # Global Footer
   --------------------------------------------------------------*/
@@ -390,7 +402,7 @@ section,
     background-color: var(--background-color);
     font-size: 14px;
     padding-bottom: 50px;
-    position: relative;
+    position: relative
   }
   
   .footer .footer-top {
