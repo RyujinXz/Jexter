@@ -3,6 +3,8 @@ body {
   padding-top: 80px;
 }
 
+/* Classe Para Volta  */
+
 .corpo {
   background-color: #4213a0;
 }
@@ -401,13 +403,12 @@ section,
   }
 }
 
-.card-img-top {
-  width: 100%; /* Garante que a imagem ocupe toda a largura do card */
-  height: 300px; /* Define uma altura fixa para todas as imagens */
-  object-fit: cover; /* Ajusta a imagem para preencher a área sem distorcer */
-  display: block;
-}
-
+  .card-img-top {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+    height: 300px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem para preencher a área sem distorcer */
+    display: block;
+  }
 
 /*--------------------------------------------------------------
   # Global Footer

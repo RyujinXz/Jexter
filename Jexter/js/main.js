@@ -1,20 +1,11 @@
-// // Confirmando o Formulário
-// const name = document.getElementById('name')
-// const email = document.getElementById('email')
-// const form = document.getElementById('form')
-// const errorElement = document.getElementById('error')
+// Alert de Sucesso
+// function newsLatter() {
+//     var nome = document.getElementById('nome').value;
+//     var email = document.getElementById('email').value;
 
-// form.addEventListener('submit', (e) => {
-//     let messages = []
-//     if (name.value === '' || name.value == null ) {
-//         messages.push('Nome é requerido')
-//     }
-
-//     if (messages.length > 0) {
-//         e.preventDefault()
-//         errorElement.innerText = messages.join(', ')
-//     }
-// })
+//     document.getElementById('alerta').innerHTML = 
+//         '<div class="alert alert-success" role="alert">Login realizado com sucesso!</div>';
+// }
 
 
 

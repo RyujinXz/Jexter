@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <title>Jexter | Início</title>
+    <title>Jexter | Placas-Mãe AMD</title>
 
     <!-- Icon padrão para navegadores -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -113,6 +113,7 @@
                 <img src="images/produtos/b550m-steel.jpg" class="card-img-top" alt="Placa Mãe ASRock B550M Steel Legend, Chipset B550, AMD AM4, MATX, DDR4">
                 <div class="card-body">
                     <h5 class="card-title">Placa Mãe ASRock B550M Steel Legend, Chipset B550, AMD AM4, MATX, DDR4</h5>
+                    <p class="card-text">R$ 1.099,99</p>
                     <a href="#" class="btn btn-primary">
                         <i class="bi bi-cart"></i>
                     </a>
@@ -123,6 +124,7 @@
                 <img src="images/produtos/b550mbio.jpg" class="card-img-top" alt="Placa Mae Biostar B550GTQ Racing DDR4 Socket AM4 Chipset AMD B550">
                 <div class="card-body">
                     <h5 class="card-title">Placa Mae Biostar B550GTQ Racing DDR4 Socket AM4 Chipset AMD B550</h5>
+                    <p class="card-text">R$ 429,99</p>
                     <a href="#" class="btn btn-primary">
                         <i class="bi bi-cart"></i>
                     </a>
@@ -133,6 +135,7 @@
                 <img src="images/produtos/b550mgiga.webp" class="card-img-top" alt="Placa Mae Gigabyte B550M Aorus Elite DDR4 Socket AM4 Chipset AMD B550">
                 <div class="card-body">
                     <h5 class="card-title">Placa Mae Gigabyte B550M Aorus Elite DDR4 Socket AM4 Chipset AMD B550</h5>
+                    <p class="card-text">R$ 809,99</p>
                     <a href="#" class="btn btn-primary">
                         <i class="bi bi-cart"></i>
                     </a>
@@ -143,6 +146,7 @@
                 <img src="images/produtos/b550mtuf.webp" class="card-img-top" alt="Placa-Mãe Asus TUF Gaming B550M-PLUS, AMD AM4, mATX , DDR4, M.2, Aura para fita RGB">
                 <div class="card-body">
                     <h5 class="card-title">Placa-Mãe Asus TUF Gaming B550M-PLUS, AMD AM4, mATX, DDR4, M.2</h5>
+                    <p class="card-text">R$ 847,00</p>
                     <a href="#" class="btn btn-primary">
                         <i class="bi bi-cart"></i>
                     </a>
@@ -158,7 +162,7 @@
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-about">
-                        <a href="index.html" class="logo sitename">Logis</a>
+                        <a href="index.html" class="logo sitename">Jexter</a>
                         <div class="footer-contact pt-3">
                             <p>Avenida Abílio Augusto Távora, 1.111</p>
                             <p>Bairro da Luz, Nova Iguaçu, RJ, Brasil</p>
@@ -197,29 +201,26 @@
                 </div>
 
                 <div class="col-lg-4 col-md-12 footer-newsletter">
-                    <h4 class="text-uppercase mb-3 text-white">Logis News</h4>
+                    <h4 class="text-uppercase mb-3 text-white">Jexter News</h4>
                     <p class="mb-4 text-light">Receba nossas ofertas exclusivas e novidades diretamente no seu e-mail.
                     </p>
-                    <form action="{% url 'gravar' %}" method="post" class="newsletter-form p-3 rounded shadow-sm">
-                        <div class="form-group mb-3">
-                            <label for="nome" class="form-label text-light">Seu Nome</label>
-                            <input type="text" id="nome" name="nome"
-                                class="form-control rounded-pill text-white bg-dark" placeholder="Ex: João Silva">
+
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Qual é o seu nome?" id="nome" required>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="email" class="form-label text-light">Seu E-mail</label>
-                            <input type="email" id="email" name="email"
-                                class="form-control rounded-pill text-white bg-dark"
-                                placeholder="Ex: email@exemplo.com">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Qual é seu e-mail?" id="email"
+                                required>
                         </div>
-                        <div class="text-center">
-                            <button type="submit"
-                                class="btn btn-light text-uppercase w-100 rounded-pill">Cadastrar</button>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary gap" onclick="enviar()">Cadastrar</button>
+                            <button type="button" class="btn btn-danger gap" onclick="limparCampos()">Limpar</button>
                         </div>
                     </form>
+                    <div id="alerta"></div>
+
                 </div>
-
-
 
                 <div class="container copyright text-center mt-4">
                     <p>© <span>2025</span> <strong class="px-1 sitename">Jexter</strong> <span>| Todos os direitos
@@ -229,6 +230,8 @@
                     </div>
                 </div>
     </footer>
+
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/aos.js"></script>
@@ -245,8 +248,27 @@
     <!-- isotope -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
+<!--     <script src="js/isotope.pkgd.min.js"></script> -->
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
+
+
+    <script>
+        function enviar() {
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+
+
+            if (nome === "" || email === "") {
+                document.getElementById("alerta").innerHTML = '<div class="alert alert-warning gap" role="alert">Por favor, preencha todos os campos!</div>';
+            } else {
+                document.getElementById("alerta").innerHTML ='<div class="alert text-light gap" role="alert" style="background:#6f42c1">Cadastro realizado com sucesso!</div>';
+            }
+        }
+
+        function limparCampos() {
+        document.getElementById("alerta").innerHTML = ""; // Limpa o conteúdo da div
+    }      
+    </script>
 </body>

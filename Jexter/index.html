@@ -27,6 +27,7 @@
     <!-- Manisfesto para PWA (Progressive Web Apps) -->
     <link rel="manifest" href="images/favicon/site.webmanifest">
     
+
 </head>
 
 <body class="bg-dark">
@@ -308,20 +309,24 @@
 
                 <div class="col-lg-4 col-md-12 footer-newsletter">
                     <h4 class="text-uppercase mb-3 text-white">Jexter News</h4>
-                    <p class="mb-4 text-light">Receba nossas ofertas exclusivas e novidades diretamente no seu e-mail.</p>
+                    <p class="mb-4 text-light">Receba nossas ofertas exclusivas e novidades diretamente no seu e-mail.
+                    </p>
 
-                    <div id="error"></div>
-                    <form id="form" action="" method="GET" class="row g-3">
+                    <form class="row g-3">
                         <div class="col-md-6">
-                          <input type="text" class="form-control" placeholder="Qual é o seu nome?" id="name" required>
+                            <input type="text" class="form-control" placeholder="Qual é o seu nome?" id="nome" required>
                         </div>
                         <div class="col-md-6">
-                          <input type="email" class="form-control" placeholder="Qual é seu e-mail?" id="email" required>
+                            <input type="email" class="form-control" placeholder="Qual é seu e-mail?" id="email"
+                                required>
                         </div>
                         <div class="col-12">
-                          <button type="submit" class="btn btn-primary">Cadastrar</button>
+                            <button type="button" class="btn btn-primary gap" onclick="enviar()">Cadastrar</button>
+                            <button type="button" class="btn btn-danger gap" onclick="limparCampos()">Limpar</button>
                         </div>
-                      </form>
+                    </form>
+                    <div id="alerta"></div>
+
                 </div>
 
                 <div class="container copyright text-center mt-4">
@@ -350,10 +355,29 @@
     <!-- isotope -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
+<!--     <script src="js/isotope.pkgd.min.js"></script> -->
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
+
+
+    <script>
+        function enviar() {
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+
+
+            if (nome === "" || email === "") {
+                document.getElementById("alerta").innerHTML = '<div class="alert alert-warning gap" role="alert">Por favor, preencha todos os campos!</div>';
+            } else {
+                document.getElementById("alerta").innerHTML ='<div class="alert text-light gap" role="alert" style="background:#6f42c1">Cadastro realizado com sucesso!</div>';
+            }
+        }
+
+        function limparCampos() {
+        document.getElementById("alerta").innerHTML = ""; // Limpa o conteúdo da div
+    }      
+    </script>
 </body>
 
 </html>
