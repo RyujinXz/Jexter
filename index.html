@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Jexter | Início</title>
+
+    <!-- Icon padrão para navegadores -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+    <!-- Icon para Apple Touch (Iphones, Ipads) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+
+    <!-- Icon para Android (Chrome) -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+
+    <!-- Manisfesto para PWA (Progressive Web Apps) -->
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    
+
+</head>
+
+<body class="bg-dark">
+
+    <nav class="navbar navbar-dark corpo fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" width="250" height="50"
+                    class="d-inline-block align-text-top rounded">
+            </a>
+            <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busque aqui na Jexter" aria-label="Search">
+                <button class="btn btn-info" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Jexter</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#vendas">Computadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Processadores
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="processadorintel.html">Intel</a></li>
+                                <li><a class="dropdown-item" href="processadoramd.html">AMD</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Placa de Vídeo
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="placanvidia.html">Nvidia</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">AMD</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Placas-Mãe
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <!-- <li><a class="dropdown-item" href="#">Intel</a></li> -->
+                                <li><a class="dropdown-item" href="placamaeamd.html">AMD</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Seção Hero -->
+        <section id="hero" class="hero section dark-background">
+
+            <img src="images/banner.png" alt="Banner Mostrando Jovens Jogando" data-aos="fade-in">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row justify-content-start">
+                    <div class="col-lg-8">
+                        <h2>Bem-vindo à Jexter!</h2>
+                        <p>A realização de um jovem de 18 anos, nascido e criado no subúrbio do Rio de Janeiro.</p>
+                        <a href="#sobre" class="btn btn-custom">Começar</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section about">
+
+            <!-- Título da Seção -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Quem Somos</h2>
+                <p>"Quem não está disposto a sacrificar nada, não consegue mudar nada."</p>
+            </div><!-- Termina o Título -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/sobre.png" class="img-fluid rounded" alt="Imagem do Líder da Jexter">
+                    </div>
+
+                    <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+                        <h3>A Promessa do Cenário Tecnológico Brasileiro</h3>
+                        <p class="fst-italic">
+                            Imerso em um ambiente de competividade e faltas de oportunidade, Matheus Lopes, fundador da
+                            <strong>Jexter</strong>, entendeu desde cedo que se quisesse almejar ao sucesso precisaria
+                            se esforçar <strong>10</strong> vezes que mais os demais.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="bi bi-1-circle"></i><span>Aos 22 anos alcançou o cargo de gerência do Senac
+                                    Nova Iguaçu. Sendo o gerente mais jovem na história da instuição.</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-2-circle"></i><span>Iniciou o projeto em busca da emergência do Brasil
+                                    no setor tecnológico e reescrever a história de um povo que se adaptou aos novos
+                                    cenários.</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="read-more clean"><span>Leia Mais</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><!-- /Seção Sobre -->
+
+        <!-- Seção de Vendas -->
+        <section id="vendas" class="section about">
+
+            <!-- Título da Seção -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Vendas Nacionais</h2>
+                <p>Adquira suas peças com os melhores preços do Brasil!</p>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/produtos/pc.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/produtos/pc2.avif" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/produtos/pc3.webp" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section><!-- Fim do Swiper -->
+
+        <!-- Seção de Produtos -->
+        <section id="produtos" class="section">
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Produtos Mais Quentes 🔥</h2>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="filter-buttons isotope-layout" data-layout="mansory" data-sort="original-order">
+                    <button data-filter=".destaque" class="active">Destaques</button>
+                    <button data-filter=".intel">Intel</button>
+                    <button data-filter=".amd">AMD</button>
+                    <button data-filter=".nvidia">Nvidia</button>
+                </div>
+
+                <!-- Grid de produtos -->
+                <div class="grid">
+                    <a href="processadoramd.html" class="product amd destaque">
+                        <img src="images/produtos/r7-5700x3d.webp" alt="Ryzen 7 5700x3D">
+                    </a>
+                    <a href="placanvidia.html" class="product nvidia destaque">
+                        <img src="images/produtos/rtx4060-ti.jpg" alt="RTX 4060 TI">
+                    </a>
+                    <a href="processadorintel.html" class="product intel">
+                        <img src="images/produtos/i512600kf.jpg" alt="i5 12600KF">
+                    </a>
+                    <a href="placanvidia.html" class="product nvidia destaque">
+                        <img src="images/produtos/rtx5090.webp" alt="RTX 5090">
+                    </a>
+                    <a href="placanvidia.html" class="product nvidia">
+                        <img src="images/produtos/rtx4080super.webp" alt="RTX 4080 Super">
+                    </a>
+                    <a href="processadoramd.html" class="product amd">
+                        <img src="images/produtos/r9-7950x3d.jpg" alt="Ryzen 9 7950x3D">
+                    </a>
+                    <a href="processadoramd.html" class="product amd">
+                        <img src="images/produtos/r5-5600x.jpg" alt="Ryzen 5 5600X">
+                    </a>
+                    <a href="processadorintel.html" class="product intel">
+                        <img src="images/produtos/i9-14900k.webp" alt="i9 14900K">
+                    </a>
+                    <a href="processadorintel.html" class="product intel destaque">
+                        <img src="images/produtos/i7-13700k.jpg" alt="i7 13700K">
+                    </a>
+                    <a href="processadorintel.html" class="product intel">
+                        <img src="images/produtos/i5-12400f.webp" alt="i5 12400F">
+                    </a>
+                    <a href="placanvidia.html" class="product nvidia">
+                        <img src="images/produtos/rtx2060.jpg" alt="RTX 2060">
+                    </a>
+                    <a href="processadoramd.html" class="product amd">
+                        <img src="images/produtos/r9-9950x.jpg" alt="Ryzen 9 9950X">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer id="footer" class="footer position-relative dark-background">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <a href="index.html" class="logo sitename">Jexter</a>
+                        <div class="footer-contact pt-3">
+                            <p>Avenida Abílio Augusto Távora, 1.111</p>
+                            <p>Bairro da Luz, Nova Iguaçu, RJ, Brasil</p>
+                            <p class="mt-3"><strong>Telefone:</strong> <span>(21) 97239-2745</span></p>
+                            <p><strong>E-mail:</strong> <span>matheusmarcelino.dev@gmail.com</span></p>
+                        </div>
+                        <div class="social-links d-flex mt-4">
+                            <a href="https://www.youtube.com/@kaizer_lm/featured" target="_blank" class="twitter"><i
+                                    class="bi bi-youtube"></i></a>
+                            <a href="https://steamcommunity.com/profiles/76561198348318871/" target="_blank"
+                                class="facebook"><i class="bi bi-steam"></i></a>
+                            <a href="https://wa.me/5521972392745" target="_blank" class="instagram"><i
+                                    class="bi bi-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/in/matheus-lopes-9729b9282/" target="_blank"
+                                class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Nossos Parceiros</h4>
+                    <ul>
+                        <li><a href="https://www.nvidia.com/pt-br/">NVIDIA</a></li>
+                        <li><a href="https://www.amazon.com.br/">Amazon</a></li>
+                        <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4 class="text-uppercase mb-3 text-white">Jexter News</h4>
+                    <p class="mb-4 text-light">Receba nossas ofertas exclusivas e novidades diretamente no seu e-mail.
+                    </p>
+
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Qual é o seu nome?" id="nome" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Qual é seu e-mail?" id="email"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary gap" onclick="enviar()">Cadastrar</button>
+                            <button type="button" class="btn btn-danger gap" onclick="limparCampos()">Limpar</button>
+                        </div>
+                    </form>
+                    <div id="alerta"></div>
+
+                </div>
+
+                <div class="container copyright text-center mt-4">
+                    <p>© <span>2025</span> <strong class="px-1 sitename">Jexter</strong> <span>| Todos os direitos
+                            reservados.</span></p>
+                    <div class="credits">
+                        Desenvolvido por <a href="https://wa.me/5521972392745">Matheus Lopes</a>
+                    </div>
+                </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Iniciar Swiper -->
+    <script src="js/swiper.js"></script>
+
+    <!-- isotope -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!--     <script src="js/isotope.pkgd.min.js"></script> -->
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+
+    <script>
+        function enviar() {
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+
+
+            if (nome === "" || email === "") {
+                document.getElementById("alerta").innerHTML = '<div class="alert alert-warning gap" role="alert">Por favor, preencha todos os campos!</div>';
+            } else {
+                document.getElementById("alerta").innerHTML ='<div class="alert text-light gap" role="alert" style="background:#6f42c1">Cadastro realizado com sucesso!</div>';
+            }
+        }
+
+        function limparCampos() {
+        document.getElementById("alerta").innerHTML = ""; // Limpa o conteúdo da div
+    }      
+    </script>
+</body>
+
+</html>
